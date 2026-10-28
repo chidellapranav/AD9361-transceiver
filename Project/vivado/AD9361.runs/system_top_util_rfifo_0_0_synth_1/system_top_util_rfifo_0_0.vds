@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct 19 09:44:54 2026
+# Process ID: 58984
+# Current directory: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1
+# Command line: vivado -log system_top_util_rfifo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_util_rfifo_0_0.tcl
+# Log file: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/system_top_util_rfifo_0_0.vds
+# Journal file: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/vivado.jou
+# Running On: pranavsai, OS: Linux, CPU Frequency: 3604.314 MHz, CPU Physical cores: 10, Host memory: 16439 MB
+#-----------------------------------------------------------
+source system_top_util_rfifo_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1343}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1306}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-3656}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-4623}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-459}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Synth 8-3331}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Synth 8-2490}  -new_severity {WARNING} '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pranavsai/new_reference/hdl/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pranavsai/WORK/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_top_util_rfifo_0_0
+Command: synth_design -top system_top_util_rfifo_0_0 -part xc7z035ifbg676-2L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: [Common 17-86] Your Synthesis license expires in 18 day(s)
+INFO: [Device 21-403] Loading part xc7z035ifbg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59126
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/pranavsai/WORK/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.734 ; gain = 370.770 ; free physical = 204 ; free virtual = 4334
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3028.773; parent = 2055.707; children = 973.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top_util_rfifo_0_0' [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/synth/system_top_util_rfifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_rfifo' [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ipshared/a07f/util_rfifo.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_mem' [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ipshared/common/ad_mem.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem' (0#1) [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ipshared/common/ad_mem.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_rfifo' (0#1) [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ipshared/a07f/util_rfifo.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_util_rfifo_0_0' (0#1) [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/synth/system_top_util_rfifo_0_0.v:53]
+WARNING: [Synth 8-7129] Port din_valid_in_1 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_2 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_3 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_4 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[8] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[7] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[6] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[5] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[4] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[3] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[2] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[1] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[0] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_5 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[8] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[7] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[6] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[5] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[4] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[3] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[2] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[1] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[0] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_6 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[8] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[7] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[6] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[5] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[4] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[3] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[2] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[1] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_6[0] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_7 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[8] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[7] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[6] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[5] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[4] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[3] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[2] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[1] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_7[0] in module util_rfifo is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2125.672 ; gain = 443.707 ; free physical = 486 ; free virtual = 3287
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3098.742; parent = 2125.676; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2143.484 ; gain = 461.520 ; free physical = 369 ; free virtual = 3175
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.555; parent = 2143.488; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2143.484 ; gain = 461.520 ; free physical = 361 ; free virtual = 3167
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.555; parent = 2143.488; children = 973.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2143.484 ; gain = 0.000 ; free physical = 303 ; free virtual = 3127
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc] for cell 'inst'
+Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.234 ; gain = 0.000 ; free physical = 188 ; free virtual = 2725
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2292.234 ; gain = 0.000 ; free physical = 162 ; free virtual = 2709
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/pranavsai/WORK/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 518 ; free virtual = 2993
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ifbg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 552 ; free virtual = 3026
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_enable_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/din_req_t_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/din_req_t_m2_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/din_req_t_m3_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/dout_unf_m1_reg. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_util_rfifo_0_0/util_rfifo_constr.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 607 ; free virtual = 3081
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 679 ; free virtual = 3162
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              16K Bit	(256 X 64 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port din_valid_in_1 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_2 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_3 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_4 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[8] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[7] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[6] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[5] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[4] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[3] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[2] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[1] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_4[0] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_valid_in_5 in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[15] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[14] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[13] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[12] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[11] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[10] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[9] in module util_rfifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din_data_5[8] in module util_rfifo is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 613 ; free virtual = 3107
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1258.391; parent = 1125.279; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | i_mem/m_ram_reg | 256 x 64(NO_CHANGE)    | W |   | 256 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 370 ; free virtual = 2970
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1323.131; parent = 1193.578; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 369 ; free virtual = 2969
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1323.213; parent = 1193.660; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | i_mem/m_ram_reg | 256 x 64(NO_CHANGE)    | W |   | 256 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 379 ; free virtual = 2979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 267 ; free virtual = 2674
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 252 ; free virtual = 2659
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 236 ; free virtual = 2644
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 220 ; free virtual = 2628
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 220 ; free virtual = 2628
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 220 ; free virtual = 2628
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |     4|
+|3     |LUT3     |     6|
+|4     |LUT4     |     9|
+|5     |LUT5     |     9|
+|6     |LUT6     |     8|
+|7     |RAMB36E1 |     1|
+|8     |FDCE     |    29|
+|9     |FDPE     |     2|
+|10    |FDRE     |   148|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 220 ; free virtual = 2627
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1324.481; parent = 1194.929; children = 133.111
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3233.289; parent = 2260.223; children = 973.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2292.234 ; gain = 461.520 ; free physical = 220 ; free virtual = 2627
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2292.234 ; gain = 610.270 ; free physical = 203 ; free virtual = 2611
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2292.234 ; gain = 0.000 ; free physical = 225 ; free virtual = 2656
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.234 ; gain = 0.000 ; free physical = 214 ; free virtual = 2535
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4fba3d06
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 2292.234 ; gain = 959.672 ; free physical = 364 ; free virtual = 2690
+INFO: [Common 17-1381] The checkpoint '/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/system_top_util_rfifo_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_top_util_rfifo_0_0, cache-ID = 132aa2ca170c64f5
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1/system_top_util_rfifo_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_util_rfifo_0_0_utilization_synth.rpt -pb system_top_util_rfifo_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 19 09:45:55 2026...

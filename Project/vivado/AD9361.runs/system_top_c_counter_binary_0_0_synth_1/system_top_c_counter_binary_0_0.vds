@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct 19 09:46:00 2026
+# Process ID: 59746
+# Current directory: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1
+# Command line: vivado -log system_top_c_counter_binary_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_c_counter_binary_0_0.tcl
+# Log file: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/system_top_c_counter_binary_0_0.vds
+# Journal file: /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/vivado.jou
+# Running On: pranavsai, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 10, Host memory: 16439 MB
+#-----------------------------------------------------------
+source system_top_c_counter_binary_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1343}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1306}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-3656}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-4623}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-459}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Synth 8-3331}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Synth 8-2490}  -new_severity {WARNING} '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1320.625 ; gain = 0.023 ; free physical = 5468 ; free virtual = 8618
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pranavsai/new_reference/hdl/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pranavsai/WORK/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_top_c_counter_binary_0_0
+Command: synth_design -top system_top_c_counter_binary_0_0 -part xc7z035ifbg676-2L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035i'
+INFO: [Common 17-86] Your Synthesis license expires in 18 day(s)
+INFO: [Device 21-403] Loading part xc7z035ifbg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 60241
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/pranavsai/WORK/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.070 ; gain = 369.801 ; free physical = 1214 ; free virtual = 4467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1274.323; parent = 1141.177; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3037.047; parent = 2058.012; children = 979.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_top_c_counter_binary_0_0' [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_c_counter_binary_0_0/synth/system_top_c_counter_binary_0_0.vhd:66]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
+	Parameter C_COUNT_TO bound to: 1 - type: string 
+	Parameter C_COUNT_BY bound to: 100101000 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 0 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_15' declared at '/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ipshared/e1e1/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2146' bound to instance 'U0' of component 'c_counter_binary_v12_0_15' [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_c_counter_binary_0_0/synth/system_top_c_counter_binary_0_0.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'system_top_c_counter_binary_0_0' (0#1) [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_c_counter_binary_0_0/synth/system_top_c_counter_binary_0_0.vhd:66]
+WARNING: [Synth 8-7129] Port CE in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[15] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[14] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[13] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[12] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[11] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[10] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port load in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[15] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[14] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[13] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[12] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[11] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[10] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[9] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[8] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[7] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[6] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[5] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[4] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[3] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[2] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[1] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[0] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[15] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[14] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[13] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[12] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[11] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[10] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[9] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[8] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[7] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[6] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[5] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[4] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[3] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[2] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[1] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[0] in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_counter_binary_v12_0_15_legacy is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2145.977 ; gain = 463.707 ; free physical = 1258 ; free virtual = 4509
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1274.323; parent = 1141.177; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3125.016; parent = 2145.980; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2163.789 ; gain = 481.520 ; free physical = 1209 ; free virtual = 4460
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1274.323; parent = 1141.177; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3142.828; parent = 2163.793; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2163.789 ; gain = 481.520 ; free physical = 1207 ; free virtual = 4458
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1274.323; parent = 1141.177; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3142.828; parent = 2163.793; children = 979.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2169.727 ; gain = 0.000 ; free physical = 1178 ; free virtual = 4436
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_c_counter_binary_0_0/system_top_c_counter_binary_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.gen/sources_1/bd/system_top/ip/system_top_c_counter_binary_0_0/system_top_c_counter_binary_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2289.570 ; gain = 0.000 ; free physical = 426 ; free virtual = 3712
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2289.570 ; gain = 0.000 ; free physical = 423 ; free virtual = 3709
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/pranavsai/WORK/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 377 ; free virtual = 3603
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1276.137; parent = 1144.515; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ifbg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 361 ; free virtual = 3593
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1276.137; parent = 1144.515; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 347 ; free virtual = 3583
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1276.137; parent = 1144.515; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 289 ; free virtual = 3543
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1276.137; parent = 1144.515; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port CE in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UP in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[15] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[14] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[13] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[12] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[11] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[10] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[9] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[8] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[7] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[6] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[5] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[4] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[3] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[2] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[1] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[0] in module c_counter_binary_v12_0_15_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 268 ; free virtual = 3511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1276.137; parent = 1144.515; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 234 ; free virtual = 3014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1330.370; parent = 1199.711; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 237 ; free virtual = 3017
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1330.467; parent = 1199.808; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 285 ; free virtual = 3064
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1330.629; parent = 1199.970; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 197 ; free virtual = 2981
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.947; parent = 1200.698; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 196 ; free virtual = 2980
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.962; parent = 1200.713; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 171 ; free virtual = 2955
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.978; parent = 1200.729; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 158 ; free virtual = 2939
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1333.015; parent = 1200.766; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 218 ; free virtual = 2963
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1333.015; parent = 1200.766; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 191 ; free virtual = 2936
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1333.028; parent = 1200.779; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     3|
+|2     |MUXCY |    15|
+|3     |XORCY |    16|
+|4     |FDRE  |    16|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 177 ; free virtual = 2923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1333.060; parent = 1200.811; children = 133.146
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3268.609; parent = 2289.574; children = 979.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2289.570 ; gain = 481.520 ; free physical = 198 ; free virtual = 2944
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2289.570 ; gain = 607.301 ; free physical = 193 ; free virtual = 2939
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2289.570 ; gain = 0.000 ; free physical = 182 ; free virtual = 2928
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2289.570 ; gain = 0.000 ; free physical = 445 ; free virtual = 3133
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 4 instances
+
+Synth Design complete, checksum: 2cabb815
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2289.570 ; gain = 968.945 ; free physical = 1266 ; free virtual = 3955
+INFO: [Common 17-1381] The checkpoint '/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/system_top_c_counter_binary_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_top_c_counter_binary_0_0, cache-ID = 49d32c906d900295
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1/system_top_c_counter_binary_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_c_counter_binary_0_0_utilization_synth.rpt -pb system_top_c_counter_binary_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 19 09:47:20 2026...

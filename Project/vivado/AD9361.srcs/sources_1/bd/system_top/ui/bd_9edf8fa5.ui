@@ -1,0 +1,120 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.707063",
+   "Default View_TopLeft":"-190,-78",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR_0 -pg 1 -lvl 7 -x 3590 -y 1030 -defaultsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 7 -x 3590 -y 1050 -defaultsOSRD
+preplace port port-id_SPI0_MISO_I_0 -pg 1 -lvl 0 -x -50 -y 1130 -defaultsOSRD
+preplace port port-id_SPI0_MOSI_O_0 -pg 1 -lvl 7 -x 3590 -y 1170 -defaultsOSRD
+preplace port port-id_SPI0_SCLK_O_0 -pg 1 -lvl 7 -x 3590 -y 1190 -defaultsOSRD
+preplace port port-id_SPI0_SS_O_0 -pg 1 -lvl 7 -x 3590 -y 1210 -defaultsOSRD
+preplace port port-id_enable_0 -pg 1 -lvl 7 -x 3590 -y 530 -defaultsOSRD
+preplace port port-id_gpio_clksel_0 -pg 1 -lvl 7 -x 3590 -y 930 -defaultsOSRD
+preplace port port-id_gpio_en_agc_0 -pg 1 -lvl 7 -x 3590 -y 890 -defaultsOSRD
+preplace port port-id_gpio_resetb_0 -pg 1 -lvl 7 -x 3590 -y 850 -defaultsOSRD
+preplace port port-id_gpio_sync_0 -pg 1 -lvl 7 -x 3590 -y 870 -defaultsOSRD
+preplace port port-id_rx_clk_in_n_0 -pg 1 -lvl 0 -x -50 -y 510 -defaultsOSRD
+preplace port port-id_rx_clk_in_p_0 -pg 1 -lvl 0 -x -50 -y 530 -defaultsOSRD
+preplace port port-id_rx_frame_in_n_0 -pg 1 -lvl 0 -x -50 -y 590 -defaultsOSRD
+preplace port port-id_rx_frame_in_p_0 -pg 1 -lvl 0 -x -50 -y 900 -defaultsOSRD
+preplace port port-id_tx_clk_out_n_0 -pg 1 -lvl 7 -x 3590 -y 550 -defaultsOSRD
+preplace port port-id_tx_clk_out_p_0 -pg 1 -lvl 7 -x 3590 -y 570 -defaultsOSRD
+preplace port port-id_tx_frame_out_n_0 -pg 1 -lvl 7 -x 3590 -y 630 -defaultsOSRD
+preplace port port-id_tx_frame_out_p_0 -pg 1 -lvl 7 -x 3590 -y 650 -defaultsOSRD
+preplace port port-id_txnrx_0 -pg 1 -lvl 7 -x 3590 -y 670 -defaultsOSRD
+preplace portBus gpio_ctl_0 -pg 1 -lvl 7 -x 3590 -y 910 -defaultsOSRD
+preplace portBus gpio_status_0 -pg 1 -lvl 0 -x -50 -y 920 -defaultsOSRD
+preplace portBus rx_data_in_n_0 -pg 1 -lvl 0 -x -50 -y 550 -defaultsOSRD
+preplace portBus rx_data_in_p_0 -pg 1 -lvl 0 -x -50 -y 570 -defaultsOSRD
+preplace portBus tx_data_out_n_0 -pg 1 -lvl 7 -x 3590 -y 590 -defaultsOSRD
+preplace portBus tx_data_out_p_0 -pg 1 -lvl 7 -x 3590 -y 610 -defaultsOSRD
+preplace inst IP_AnalogDevices -pg 1 -lvl 6 -x 3330 -y 500 -defaultsOSRD
+preplace inst IP_PS -pg 1 -lvl 5 -x 1880 -y 1504 -defaultsOSRD
+preplace inst Rx_TestBench -pg 1 -lvl 3 -x 1100 -y 350 -defaultsOSRD
+preplace inst Tx_TestBench -pg 1 -lvl 5 -x 1880 -y 392 -defaultsOSRD
+preplace inst ad9361_io_manager_0 -pg 1 -lvl 6 -x 3330 -y 910 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 680 -y 660 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 1 -x 220 -y 80 -defaultsOSRD
+preplace inst rst_ad9361 -pg 1 -lvl 2 -x 680 -y 410 -defaultsOSRD
+preplace inst rst_ps_100M -pg 1 -lvl 1 -x 220 -y 700 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1410 -y 820 -defaultsOSRD
+preplace inst Tx_TestBench|c_counter_binary_0 -pg 1 -lvl 1 -x 1900 -y 452 -defaultsOSRD
+preplace inst Tx_TestBench|cordic_0 -pg 1 -lvl 2 -x 2250 -y 742 -defaultsOSRD
+preplace inst Tx_TestBench|xlconstant_0 -pg 1 -lvl 1 -x 1900 -y 802 -defaultsOSRD
+preplace inst Tx_TestBench|xlconstant_1 -pg 1 -lvl 1 -x 1900 -y 702 -defaultsOSRD
+preplace inst Tx_TestBench|xlslice_0 -pg 1 -lvl 3 -x 2600 -y 562 -defaultsOSRD
+preplace inst Tx_TestBench|xlslice_1 -pg 1 -lvl 3 -x 2600 -y 662 -defaultsOSRD
+preplace netloc F_clk0 1 0 6 40 800 500 740 950 740 1270 740 1580 262 2920
+preplace netloc IP_AnalogDevices_adc_r1_mode 1 0 7 40 160 400J 10 NJ 10 NJ 10 NJ 10 NJ 10 3540
+preplace netloc IP_AnalogDevices_dac_r1_mode 1 0 7 30 170 410J 20 NJ 20 NJ 20 NJ 20 NJ 20 3550
+preplace netloc Net 1 1 5 440 90 890 30 NJ 30 1590 242 3030
+preplace netloc SPI0_MISO_I_0_1 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 1550J
+preplace netloc ad9361_io_manager_0_gpio_clksel 1 6 1 NJ 930
+preplace netloc ad9361_io_manager_0_gpio_ctl 1 6 1 NJ 910
+preplace netloc ad9361_io_manager_0_gpio_en_agc 1 6 1 NJ 890
+preplace netloc ad9361_io_manager_0_gpio_resetb 1 6 1 NJ 850
+preplace netloc ad9361_io_manager_0_gpio_sync 1 6 1 NJ 870
+preplace netloc ad9361_io_manager_0_up_enable 1 5 2 3060 740 3510
+preplace netloc ad9361_io_manager_0_up_txnrx 1 5 2 3070 750 3500
+preplace netloc axi_ad9361_0_enable 1 6 1 NJ 530
+preplace netloc axi_ad9361_0_l_clk 1 0 7 -30 180 420J 50 860J 40 NJ 40 NJ 40 NJ 40 3520
+preplace netloc axi_ad9361_0_tx_clk_out_n 1 6 1 NJ 550
+preplace netloc axi_ad9361_0_tx_clk_out_p 1 6 1 NJ 570
+preplace netloc axi_ad9361_0_tx_data_out_n 1 6 1 NJ 590
+preplace netloc axi_ad9361_0_tx_data_out_p 1 6 1 NJ 610
+preplace netloc axi_ad9361_0_tx_frame_out_n 1 6 1 NJ 630
+preplace netloc axi_ad9361_0_tx_frame_out_p 1 6 1 NJ 650
+preplace netloc axi_ad9361_0_txnrx 1 6 1 NJ 670
+preplace netloc axi_dma_0_s2mm_introut 1 3 2 1250 730 1570J
+preplace netloc cordic_0_m_axis_dout_tvalid 1 5 1 2980 430n
+preplace netloc cordic_1_m_axis_dout_tvalid 1 5 1 3010 450n
+preplace netloc gpio_status_0_1 1 0 6 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 1 880 430n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 870 50 NJ 50 N 50 3070J
+preplace netloc ps_7_FCLK_CLK1 1 5 1 3000 330n
+preplace netloc ps_7_FCLK_RESET0_N 1 0 6 30 190 430J 60 NJ 60 NJ 60 NJ 60 2900
+preplace netloc ps_7_SPI0_MOSI_O 1 5 2 3050J 1170 NJ
+preplace netloc ps_7_SPI0_SCLK_O 1 5 2 3060J 1190 NJ
+preplace netloc ps_7_SPI0_SS_O 1 5 2 3070J 1210 NJ
+preplace netloc rst_ps_7_50M_peripheral_aresetn 1 1 5 480 270 910 190 1240 252 NJ 252 2950
+preplace netloc rx_clk_in_n_0_1 1 0 6 -30J 210 490J 150 860J 110 NJ 110 NJ 110 3050J
+preplace netloc rx_clk_in_p_0_1 1 0 6 0J 240 460J 80 NJ 80 NJ 80 NJ 80 3060J
+preplace netloc rx_data_in_n_0_1 1 0 6 -10J 230 470J 120 NJ 120 NJ 120 NJ 120 3040J
+preplace netloc rx_data_in_p_0_1 1 0 6 -20J 200 450J 130 NJ 130 NJ 130 NJ 130 3020J
+preplace netloc rx_frame_in_n_0_1 1 0 6 10J 220 480J 140 NJ 140 NJ 140 NJ 140 2990J
+preplace netloc rx_frame_in_p_0_1 1 0 6 20J 310 NJ 310 880J 160 NJ 160 NJ 160 2970J
+preplace netloc util_wfifo_0_dout_data_0 1 2 5 960 180 NJ 180 NJ 180 NJ 180 3500
+preplace netloc util_wfifo_0_dout_data_1 1 2 5 950 170 NJ 170 NJ 170 NJ 170 3510
+preplace netloc util_wfifo_0_dout_data_2 1 2 5 940 150 NJ 150 NJ 150 NJ 150 3530
+preplace netloc util_wfifo_0_dout_data_3 1 2 5 920 90 NJ 90 NJ 90 NJ 90 3570
+preplace netloc util_wfifo_0_dout_valid_0 1 2 5 930 100 NJ 100 NJ 100 NJ 100 3560
+preplace netloc xlslice_0_Dout 1 5 1 2930 350n
+preplace netloc xlslice_1_Dout 1 5 1 2940 370n
+preplace netloc xlslice_2_Dout 1 5 1 2960 410n
+preplace netloc xlslice_3_Dout 1 5 1 2910 390n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1260 340n
+preplace netloc axi_smc_M00_AXI 1 2 1 900 250n
+preplace netloc axi_smc_M01_AXI 1 2 4 930 500 1270J 272 NJ 272 3010J
+preplace netloc ps_7_DDR 1 5 2 3020J 1030 NJ
+preplace netloc ps_7_FIXED_IO 1 5 2 3040J 1050 NJ
+preplace netloc ps_7_GPIO_0 1 5 1 3030 900n
+preplace netloc ps_7_M_AXI_GP0 1 1 5 500 70 NJ 70 NJ 70 NJ 70 2890
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1560 820n
+preplace netloc Tx_TestBench|Net 1 0 2 1800 642 2010
+preplace netloc Tx_TestBench|c_counter_binary_0_Q 1 1 1 2020 452n
+preplace netloc Tx_TestBench|cordic_0_m_axis_dout_tdata 1 2 2 2480 722 NJ
+preplace netloc Tx_TestBench|cordic_0_m_axis_dout_tvalid 1 2 2 N 762 2720J
+preplace netloc Tx_TestBench|xlconstant_0_dout 1 1 1 2000 722n
+preplace netloc Tx_TestBench|xlconstant_1_dout 1 1 1 NJ 702
+preplace netloc Tx_TestBench|xlslice_0_Dout 1 3 1 2720J 562n
+preplace netloc Tx_TestBench|xlslice_1_Dout 1 3 1 2710J 582n
+levelinfo -pg 1 -50 220 680 1100 1410 1880 3330 3590
+levelinfo -hier Tx_TestBench * 1900 2250 2600 *
+pagesize -pg 1 -db -bbox -sgen -240 0 3790 1650
+pagesize -hier Tx_TestBench -db -bbox -sgen 1770 302 2750 862
+"
+}
+0

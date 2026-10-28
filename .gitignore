@@ -1,0 +1,62 @@
+# ==========================================
+# Global Xilinx Logs & Junk (Applies everywhere)
+# ==========================================
+*.jou
+*.log
+*.str
+*.pb
+.Xil/
+
+# ==========================================
+# Vivado Rules (Targets project/vivado/...)
+# ==========================================
+project/vivado/**/*.cache/
+project/vivado/**/*.hw/
+project/vivado/**/*.ip_user_files/
+project/vivado/**/*.runs/
+project/vivado/**/*.sim/
+
+# Ignore generated Block Design files (keeps only the base .bd file)
+project/vivado/**/*.srcs/*/bd/*/ipshared/
+project/vivado/**/*.srcs/*/bd/*/hw_handoff/
+project/vivado/**/*.srcs/*/bd/*/synth/
+project/vivado/**/*.srcs/*/bd/*/sim/
+project/vivado/**/*.srcs/*/bd/*/hdl/
+
+# ==========================================
+# Vitis Rules (Targets project/vitis/...)
+# ==========================================
+# Vitis IDE hidden folders
+project/vitis/**/.metadata/
+project/vitis/**/.analytics/
+project/vitis/**/RemoteSystemsTempFiles/
+
+# Vitis Build Outputs & Workspaces
+project/vitis/**/build/
+project/vitis/**/_x/
+project/vitis/**/Work/
+project/vitis/**/Work_x86/
+project/vitis/**/hw_emu/
+project/vitis/**/sd_card/
+project/vitis/**/export/
+
+# Compiled Binaries and Objects
+project/vitis/**/*.elf
+project/vitis/**/*.bin
+project/vitis/**/*.bit
+project/vitis/**/*.o
+project/vitis/**/*.a
+project/vitis/**/*.so
+
+# Simulator outputs
+project/vitis/**/x86simulator_output/
+project/vitis/**/aiesimulator_output/
+project/vitis/**/*.wdb
+project/vitis/**/*.wcfg
+
+# ==========================================
+# Capture Folder (Targets capture/...)
+# ==========================================
+# Add rules here if you want to ignore large files in your capture folder
+# capture/**/*.vcd   # Example: Ignore large waveform dumps
+# capture/**/*.zip   # Example: Ignore zipped archives

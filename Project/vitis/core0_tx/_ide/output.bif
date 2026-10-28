@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/pranavsai/ReferenceDesign/Vitis/baremetal/ad9361_tx/adrv/export/adrv/sw/adrv/boot/fsbl.elf
+	/home/pranavsai/ReferenceDesign/Vitis/baremetal/ad9361_tx/adrv/export/adrv/hw/system_141026_002.bit
+	/home/pranavsai/ReferenceDesign/Vitis/baremetal/ad9361_tx/core0_tx/Debug/core0_tx.elf
+}

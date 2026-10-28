@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="customfsbl" location="/home/pranavsai/ReferenceDesign/Vitis/baremetal/ad9361_tx/customfsbl" platform="/home/pranavsai/ReferenceDesign/Vitis/baremetal/ad9361_tx/adrv/export/adrv/adrv.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="customfsbl_system" sysConfig="adrv" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="33e253e2e6a964c07e5b3187a0889eec">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1559885978">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.341177851" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynq_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>

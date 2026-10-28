@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_top_tx_modem_burst_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_tx_modem_burst_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_axi_ad9361_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_axi_ad9361_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_util_rfifo_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_rfifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_util_wfifo_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_util_wfifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_ps_7_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_ps_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_axi_dma_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_axis_data_fifo_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_tlast_generator_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_tlast_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_c_counter_binary_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_cordic_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_cordic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_ad9361_io_manager_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_ad9361_io_manager_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_axi_smc_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_clock_divider_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_clock_divider_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_rst_ad9361_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_rst_ad9361_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_top_rst_ps_100M_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_rst_ps_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_top_rst_ad9361_0_synth_1"/>
+	</Run>
+	<Run Id="system_top_smartconnect_0_0_synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/system_top_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/pranavsai/PRJ_SELF/AD9361/AD9361.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_top_tx_modem_burst_0_0_synth_1"/>
+		<Parent Id="system_top_axi_ad9361_0_0_synth_1"/>
+		<Parent Id="system_top_util_rfifo_0_0_synth_1"/>
+		<Parent Id="system_top_util_wfifo_0_0_synth_1"/>
+		<Parent Id="system_top_ps_7_0_synth_1"/>
+		<Parent Id="system_top_axi_dma_0_0_synth_1"/>
+		<Parent Id="system_top_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="system_top_tlast_generator_0_0_synth_1"/>
+		<Parent Id="system_top_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="system_top_cordic_0_0_synth_1"/>
+		<Parent Id="system_top_ad9361_io_manager_0_0_synth_1"/>
+		<Parent Id="system_top_axi_smc_0_synth_1"/>
+		<Parent Id="system_top_clock_divider_0_0_synth_1"/>
+		<Parent Id="system_top_rst_ad9361_0_synth_1"/>
+		<Parent Id="system_top_rst_ps_100M_0_synth_1"/>
+		<Parent Id="system_top_smartconnect_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
