@@ -33,19 +33,14 @@
 //#define DEBUG_DMA
 
 /* ---------------- AD9361 / TX settings ------------------------------------ */
-#define APP_LO_FREQ_HZ ((uint64_t)2400000000)
-#define APP_SAMPLE_RATE_HZ		30720000UL
-#define APP_RF_BW_HZ			18000000UL
-
+#define APP_LO_FREQ_HZ			((uint64_t)2000000000)	/* 2.0 GHz default LO */
+#define APP_SAMPLE_RATE_HZ		30720000UL		/* 30.72 MSPS baseband sample rate */
+#define APP_RF_BW_HZ			18000000UL		/* 18 MHz analog RF filter bandwidth */
 
 /* ---------------- TX verification (HackRF / spectrum analyser) -------------
  * TX_SOURCE selects what the DAC transmits:
- *   TX_SRC_PL  : your PL tone generator (tone -> util_rfifo -> DAC)
- *   TX_SRC_DDS : AD9361 core's own DDS, APP_TX_TONE_HZ above the LO
- *                (control experiment: does the TX analog path + antenna work,
- *                 independent of the PL?)                                   */
-/* 1 = transmit. 0 = TX OFF: AD9361 is held in reset (no RF output at all),
- * for recording a reference capture. Rebuild and re-run to switch. */
+ *   TX_SRC_PL  : PL QPSK TTC Modulator (tx_modem_burst -> util_rfifo -> DAC)
+ *   TX_SRC_DDS : AD9361 core's own DDS tone (control experiment)            */
 #define APP_TX_ENABLE			1
 
 #define TX_SRC_PL			0
@@ -54,11 +49,8 @@
 #define APP_TX_TONE_HZ			1000000
 
 /* Fixed TX level. AD9361 attenuation range is 0 .. 89750 mdB in 0.25 dB steps;
- * output power falls 1 dB per 1 dB of attenuation.
- * Target: about -20 dBm at the TX port (10 dB pad -> about -30 dBm at the HackRF).
- * 20 dB is an ESTIMATE (see notes: assumes about +1 dBm at 0 dB attenuation for a
- * -6 dBFS tone). Measure the real level and trim this value by the difference. */
-#define APP_TX_ATTEN_MDB		40000	/* 20.00 dB */
+ * 10000 mdB = 10.0 dB attenuation (safe level for spectral purity without compression). */
+#define APP_TX_ATTEN_MDB		10000	/* 10.00 dB attenuation */
 
 /* DDS amplitude (TX_SRC_DDS only), 1000000 = full scale. 500000 = -6 dBFS,
  * which matches the CORDIC amplitude of the PL tone (1.0 = 16384 of 32768). */

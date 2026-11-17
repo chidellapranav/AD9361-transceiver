@@ -465,11 +465,11 @@ static int32_t tx_source_setup(void)
 	printf("TX source: AD9361 core DDS, tone %u Hz above LO\n",
 	       (unsigned)APP_TX_TONE_HZ);
 #else
-	/* CORDIC input: the DAC takes samples from util_rfifo (PL tone) which is sin+cos wave */
+	/* QPSK Modulator input: the DAC takes samples from util_rfifo (PL QPSK TTC Modulator) */
 	status = axi_dac_set_datasel(ad9361_phy->tx_dac, -1, AXI_DAC_DATA_SEL_DMA);
 	if (status < 0)
 		return status;
-	printf("TX source: PL tone generator via util_rfifo\n");
+	printf("TX source: PL QPSK TTC Modulator via util_rfifo\n");
 #endif
 	return 0;
 }
@@ -720,12 +720,12 @@ int main(void)
         return -1;
     }
 
-    status = ad9361_set_tx_lo_freq(ad9361_phy,(uint64_t)2000000000);
+    status = ad9361_set_tx_lo_freq(ad9361_phy, APP_LO_FREQ_HZ);
         if (status < 0) {
             printf("TX FAILED: ad9361_set_tx_lo_freq returned %"PRIi32"\n", status);
             goto end;
         }
-    status = ad9361_set_rx_lo_freq(ad9361_phy,(uint64_t)2000000000);
+    status = ad9361_set_rx_lo_freq(ad9361_phy, APP_LO_FREQ_HZ);
         if (status < 0) {
                 printf("RX FAILED: ad9361_set_rx_lo_freq returned %"PRIi32"\n", status);
                 goto end;
